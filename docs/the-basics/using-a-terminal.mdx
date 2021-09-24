@@ -1,0 +1,116 @@
+---
+sidebar_position: 7
+---
+
+# Using your terminal
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+The easiest way you can start feeling and thinking like a programmer is to use the terminal.
+
+Let's go through your first use step by step:
+
+:::note Opening up the Terminal
+
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows" default>
+    Do one of the following:
+    <ul>
+      <li>
+        Right-click on the Start menu icon. You can find this button in the
+        lower-left corner of your desktop. It will open your Power User Menu
+        options in a pop-up.
+      </li>
+      <li>
+        You can also just press <kbd>⊞Win</kbd>+<kbd>X</kbd> on your keyboard to
+        open this menu.
+      </li>
+      <li>
+        Alternatively, you can right-click on any folder to start Command Prompt
+        from a specific directory.
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="mac" label="MacOS">
+    Do one of the following:
+    <ul>
+      <li>
+        Click the Launchpad icon in the Dock, type Terminal in the search field,
+        then click Terminal.
+      </li>
+      <li>
+        In the Finder, open the /Applications/Utilities folder, then
+        double-click Terminal.
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+    You know how &#128539;<br></br> But ok, you might be an Ubuntu user so here's
+    the shortcut : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>.
+  </TabItem>
+</Tabs>
+
+:::
+
+#### Let's type in some instructions
+
+Type this in your terminal and press enter.
+
+```bash
+echo "Hello world"
+```
+
+Congratulations :tada: you have just given your computer an instruction and it executed it.<br></br>
+The command `echo` just prints out whatever you put afterwards. There are many _shell_ commands you can execute for example:
+
+<Tabs>
+<TabItem value="win" label="Windows" >
+TODO
+</TabItem>
+<TabItem value="unix" label="MacOS/Linux" default>
+
+- `cd` : to move within your filesystem (alias for **c**hange **d**irectory).
+- `mkdir`: to create a directory (alias for **m**a**k**e **dir**ectory).
+- `touch`: to create a file.
+- `ls`: to list the files in the directory you currently are located (alias for **l**i**s**t).
+- `rm`: to delete a file or directory (alias for **r**e**m**ove).
+
+:::info
+_Folder_ is the term used in the context of graphical user interfaces and _directory_ is the term used in a filesystem's context.
+:::
+
+Let's try all of these (type the command and press enter to execute it):
+
+1. `ls` : you should see all the files in the directory.
+1. `mkdir iamawesome`: this will create a directory named "iamawesome".
+1. `ls` : now you should see the directory you just created in the list.
+1. `cd iamawesome`: this will take you to the directory. See how the path on the left has changed.
+1. `touch myfile.txt`: you've just created a file!
+1. `ls` : do you see it?
+1. `cd ..` : you've just moved back to the parent directory.
+1. `rm -r -v iamawesome`: the `-r` is to indicate that you want everything in the directory removed and the `-v` is to indicate you want written feedback of the execution.
+
+Now let's combine them in one line with the `&&` operator, and add another command to write in a file. Write anything you want and do <kbd>CTRL</kbd>+<kbd>C</kbd> when you are done.
+
+```shell
+mkdir mydir && cd mydir && touch hello.txt && cat > hello.txt
+```
+
+Now watch what you have written with `cat hello.txt`.
+
+</TabItem>
+</Tabs>
+
+**Ok** , let's stop here, sooner or later you will have to use it again...<br></br><br></br> 
+There is so much more you can do, so if you are curious you can watch this video and play around with scripts. <a href="https://devhints.io/bash">Here is a cheatsheet</a> of different commands you can use for future reference.
+<br></br>
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/I4EWvMFj37g"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>

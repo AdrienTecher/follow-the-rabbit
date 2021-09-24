@@ -53,7 +53,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               type: "doc",
               docId: "intro",
               position: "left",
-              label: "Tutorial",
+              label: "Guide",
             } /*
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -106,9 +106,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             ],
           },
         ],*/
-          copyright: `Copyright © ${new Date().getFullYear()}. Created with ${String.fromCodePoint(
-            0x1f496
-          )} by Adrien Techer. Built with Docusaurus.`,
+          copyright: ` Created with &#128150; by Adrien Techer`,
         },
         prism: {
           theme: lightCodeTheme,

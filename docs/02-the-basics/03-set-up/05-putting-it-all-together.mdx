@@ -1,0 +1,300 @@
+# Putting it all together
+
+import ReactPlayer from "react-player";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## Preamble
+
+If you've followed the tutorial so far, you have a basic understanding fo what is terminal, a cvs, an IDE and have set up git, GitHub and VSCode. You are more than ready to link it all together and come closer to a real dev experience.
+
+As of now you might never have written actual code in a file, only commands in the terminal. Let's remedy that right away.
+
+In the next chapter we will see how to choose a programming language to start with but for now we will just code a "Hello, World!" program in some of the main programming languages out there, namely:
+
+- Powershell
+- Bash
+- HTML
+- Python
+- Javascript
+- C
+- C++
+- Java
+
+If you don't want to try out some of these just skip them. There is a [video](putting-it-all-together#a-video-for-reference) for reference down below in any case.
+
+:::note The "Hello, World!" program
+
+From Wikipedia :
+
+"A 'Hello, World!' program generally is a computer program that outputs or displays the message "Hello, World!".
+Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language.
+It is often the first program written by people learning to code.
+It can also be used as a sanity test to make sure that computer software intended to compile or run source code is correctly installed, and that the operator understands how to use it."
+
+<a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">
+  Read more about it here
+</a>
+
+:::
+
+We'll do that in these few steps:
+
+1. Create a GitHub repository.
+1. Clone it locally with a git command.
+1. Create a source file in a language.
+1. Compile, run or open the file (how we do that will depend on the language).
+1. Stage the file and commit.
+1. Repeat Step 3, 4 and 5 for each languages.
+1. Push our commits to the remote repository on GitHub.
+1. Celebrate!
+
+We will all of this via the GitHub website for Step 1 and on VSCode or a terminal for the rest.
+
+Ok, here we go 💃
+
+## Let's do it
+
+### Setting up the git project
+
+1. On GitHub, create a new repository.
+1. Clone the repository locally (on your computer). If you haven't set up SSH yet, follow <a href="https://www.freecodecamp.org/news/git-ssh-how-to/">this tutorial</a>.
+1. Open the newly created folder in VSCode and you're set for the next part.
+
+### Writing and executing the code
+
+#### Scripting languages
+
+<details>
+<summary>Powershell</summary>
+<div>
+<Tabs>
+<TabItem value="prereq" label="Prerequisites">
+<details>
+    <summary>Windows</summary>
+    <ul>
+      <li>None</li>
+    </ul>
+    </details>
+    <details>
+    <summary>MacOS/Linux</summary>
+    <ul>
+      <li>Install <a href="https://github.com/powershell/powershell">Powershell.</a></li>
+    </ul>
+    </details>
+</TabItem>
+<TabItem value="code" label="Code" default>
+
+```powershell title="hello_world.ps1"
+Write-Output "Hello, World!"
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <details>
+    <summary>Windows</summary>
+    <ul>
+      <li>Open a Powershell terminal.</li>
+      <li>Navigate to the folder containing your script.</li>
+      <li>Execute <code>./my-file-name.ps1</code> to run it.</li>
+    </ul>
+    </details>
+    <details>
+    <summary>MacOS/Linux</summary>
+    <ul>
+      <li>Open a terminal.</li>
+      <li>Execute <code>pwsh</code> to start Powershell.</li>
+      <li>Navigate to the folder containing your script.</li>
+      <li>Execute <code>./my-file-name.ps1</code> to run it.</li>
+    </ul>
+    </details>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+<details>
+<summary>Bash</summary>
+<div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+<ul><li>None.</li></ul>
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+#### Declarative languages
+
+<details>
+<summary>HTML</summary>
+<div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+<ul><li>None.</li></ul>
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+#### Interpreted languages
+
+<details>
+<summary>Python</summary>
+<div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+
+gjhj
+
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+<details>
+<summary>Javascript</summary>
+<div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+
+gjhj
+
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+#### Compiled languages
+
+<details>
+  <summary>C</summary>
+  <div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+
+gjhj
+
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+<details>
+<summary>C++</summary>
+<div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+
+gjhj
+
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+<details>
+<summary>Java</summary>
+<div>
+<Tabs>
+  <TabItem value="prereq" label="Prerequisites">
+
+gjhj
+
+  </TabItem>
+  <TabItem value="code" label="Code" default>
+
+```python title="hello_world.py"
+print("Hello, world!")
+```
+
+  </TabItem>
+  <TabItem value="exec" label="Execution" default>
+    <a href="https://ryanstutorials.net/linuxtutorial/commandline.php">
+      Linux Tutorial - The command Line
+    </a>
+  </TabItem>
+</Tabs>
+</div>
+</details>
+
+### A video for reference
+
+Here is a video that shows all the steps.
+
+<ReactPlayer controls url={useBaseUrl("/video/putting-it-all-together.mp4")} />
+
+## Concluding remarks

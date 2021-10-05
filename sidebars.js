@@ -28,7 +28,11 @@ module.exports = {
             },
           ],
         },
+        "the-basics/intro-to-programming-languages",
+        "the-basics/putting-it-all-together",
       ],
     },
+    "where-to-start",
+    "resources",
   ],
 };
